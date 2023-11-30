@@ -48,4 +48,4 @@ app.post('/upload', async (req, res) => {
 
 app.listen(3002, () => console.log(`listening 3002`))
 
-exports.app = functions.https.onRequest(app);
+exports.uploader = functions.https.onRequest(app);
